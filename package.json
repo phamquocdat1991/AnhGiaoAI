@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx -y serve .",
     "start": "npx -y serve .",
-    "build": "echo 'Static build complete'"
+    "build": "node scripts/build.mjs"
   },
   "keywords": [
     "education",
