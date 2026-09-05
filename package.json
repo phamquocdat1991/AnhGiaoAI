@@ -1,0 +1,20 @@
+{
+  "name": "edutech-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EduTech AI - Hệ Sinh Thái Ứng Dụng AI Giáo Dục",
+  "scripts": {
+    "dev": "npx -y serve .",
+    "start": "npx -y serve .",
+    "build": "echo 'Static build complete'"
+  },
+  "keywords": [
+    "education",
+    "edtech",
+    "ai",
+    "vietnam",
+    "lumina-academic"
+  ],
+  "author": "Phạm Quốc Đạt",
+  "license": "MIT"
+}
