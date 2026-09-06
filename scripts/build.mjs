@@ -3,7 +3,13 @@ import { basename, resolve } from "node:path";
 
 const projectRoot = resolve(import.meta.dirname, "..");
 const outputDirectory = resolve(projectRoot, "public");
-const staticFiles = ["index.html", "code.html", "favicon.svg", "screen.png"];
+const staticFiles = [
+  "index.html",
+  "code.html",
+  "favicon.svg",
+  "screen.png",
+  "hero-anh-giao.png",
+];
 
 await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
