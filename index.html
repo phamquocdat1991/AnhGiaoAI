@@ -165,6 +165,16 @@
   .app-cover > img { position: absolute; inset: 0; z-index: 1; }
   .app-cover > img[hidden] { display: none; }
   .app-cover > span, .app-cover > div:not(.app-cover-fallback) { z-index: 2; }
+
+  .app-cover { background: #060d20; container-type: inline-size; }
+  .app-cover > .app-cover-title { z-index: 2; pointer-events: none; background: linear-gradient(90deg, rgba(3,9,25,.78), rgba(3,9,25,.12) 65%, transparent); padding: 44px 20px 18px; gap: 9px; }
+  .app-cover-title strong { font-family: Georgia, "Times New Roman", serif; font-size: clamp(18px, 7cqw, 30px); line-height: 1.08; max-width: 53%; letter-spacing: -.02em; text-shadow: 0 2px 16px #030919; color: #eefaff; }
+  .app-cover-title small { font-size: 8px; letter-spacing: .13em; color: #bfddf7; max-width: 48%; }
+  .app-cover-title small:last-child { display: none; }
+  .app-cover > span { z-index: 3; }
+  .app-cover > div:not(.app-cover-fallback) { z-index: 4; }
+  @media (prefers-reduced-motion: reduce) { .app-cover img { transition: none; } }
+  .app-cover-title strong.cover-title-long { font-size: clamp(17px, 5.4cqw, 24px); }
 </style>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
@@ -323,8 +333,8 @@
     <!-- Card 1: KHBD AI PRO -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="KẾ HOẠCH BÀI DẠY" data-desc="Hỗ trợ giáo viên xây dựng kế hoạch bài dạy bằng AI theo cấu trúc khoa học, trực quan và thuận tiện." data-group="KẾ HOẠCH" data-title="KHBD AI PRO">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://khbd-ai-one.vercel.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 01</small><strong>KHBD AI PRO</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="KHBD AI PRO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1WJjOa2ilvppFAoq2hgfiUkQOpviPmyFIHC0WdkwkwxhJAuAYkepy3xxGbQEbbyool0A1yuzOoGv1WfLSYFwkfhgkjCFh5w9yfVYhRxQF148Lk8WMe7zwiavXtAolnMMi0_x4NLI-EQf0OZlk-daSGYl8rErmCZpwQKdMJimbB9SioQftz0LKHHvq9vI8li8ck1mI81fca9ObWcW4ol1zvNjYGez1FoxqpBnts-vWa9KX6gXUbkM6kPLIOJ" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 01</small><strong>KHBD AI PRO</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="KHBD AI PRO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/khbd-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">ỨNG DỤNG</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -347,8 +357,8 @@
     <!-- Card 2: GIÁO BÀI ONLINE -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="KẾ HOẠCH &amp; GIẢNG DẠY" data-desc="Ứng dụng hỗ trợ công việc chuẩn bị và tổ chức nội dung giảng dạy trong hệ sinh thái giáo dục số." data-group="KẾ HOẠCH" data-title="GIÁO BÀI ONLINE">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://giaobaionline.vercel.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 02</small><strong>GIÁO BÀI ONLINE</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="GIÁO BÀI ONLINE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XvL69bNJ7WOuzdfqmxpHHygHXVUlTQMk13y_D-o9RPBmaHifNFs9WeW05HnEMMn-nWIEga3zL4ea14UjfpM8hEYAptZqJeZtyVGFdSLf8gTNBS_a2DD8c1_mM2iDQFhaC4_iZY27j_vZBTcOYMRWGurNXZRztkp_Ae_27T_cJkX3j4YLUZfdmmX019SU_HZjjwjAzGy24s1PBdFW-m_04qecRH_ssfQ6oBZKio-zzn0lGoHG5CoqzKOZY" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 02</small><strong>GIÁO BÀI ONLINE</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="GIÁO BÀI ONLINE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/giaobai-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">ỨNG DỤNG</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -371,8 +381,8 @@
     <!-- Card 3: QUẢN LÝ LỚP 9A -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="QUẢN LÝ LỚP" data-desc="Hỗ trợ giáo viên chủ nhiệm quản lý lớp học, theo dõi thông tin và tổ chức các hoạt động quản lý lớp thuận tiện hơn." data-group="QUẢN LÝ" data-title="QUẢN LÝ LỚP 9A">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://appgvcn.netlify.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 03</small><strong>QUẢN LÝ LỚP 9A</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="QUẢN LÝ LỚP 9A" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1W7shZIBXUVEpX1n4U7fLiptb_pHB5di_ZibTWL9MTsuJ8IVX6LHeBnR0cDVYJX-NdcCbjembGgOivtyttUYKnCdIvGrZn2zpgLHsSj0H6aju9JdNsmwjuoYokvo-kJdI2dxVCMOyxXz1k-HgyqkBrUEgQ2SGvB9UpNbphBVN-rphdH5Qc5YFinsTt-F62uL5EdT6X6d2VEKdF0-58BA2mNDq-Eqb5sWlA7kGviV9ZIv9Qh1C5QJM8yzYIk" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 03</small><strong>QUẢN LÝ LỚP 9A</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="QUẢN LÝ LỚP 9A" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/quanlylop-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">ỨNG DỤNG</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -408,8 +418,8 @@
     <!-- Card 4: TẠO ĐỀ KIỂM TRA -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="KIỂM TRA - ĐÁNH GIÁ" data-desc="Hỗ trợ giáo viên xây dựng đề kiểm tra, tổ chức câu hỏi và phục vụ công tác kiểm tra đánh giá." data-group="KIỂM TRA" data-title="TẠO ĐỀ KIỂM TRA">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://taodekiemtra-navy.vercel.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 04</small><strong>TẠO ĐỀ KIỂM TRA</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="TẠO ĐỀ KIỂM TRA" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1X1rLL49X1uUPq4bumviAs-LU2dR1HyjyGS02r9bK2VbgVmo-buMkesxcQw6lUdU5yQuOzSfWa2l_ZgoC-zQ203Lw-S6_Fq7xoXiCJGFpk364GYFzEEOpTV2dtuMbzZ_b_wkTjmGLZywzUlHMyQcSw_Q-pO4Y3y1NKgA815kpLEEp_0-PEfSo9v0s1bxqoFo_LrSaZxq-2BYZAy9tjLAOO2A4yAcdlPailukkiD5nDxnto72y2h4fqI-3I4" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 04</small><strong>TẠO ĐỀ KIỂM TRA</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="TẠO ĐỀ KIỂM TRA" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/taode-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">ỨNG DỤNG</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -432,8 +442,8 @@
     <!-- Card 5: AI BIẾN THỂ ĐỀ THI 3 CẤP ĐỘ -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="KIỂM TRA - ĐÁNH GIÁ" data-desc="Hỗ trợ tạo các biến thể đề kiểm tra theo nhiều cấp độ, phục vụ ôn tập và đánh giá học sinh." data-group="KIỂM TRA" data-title="AI BIẾN THỂ ĐỀ THI 3 CẤP ĐỘ">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://bien-the-de-thi.vercel.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 05</small><strong>AI BIẾN THỂ ĐỀ THI 3 CẤP ĐỘ</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="AI BIẾN THỂ ĐỀ THI 3 CẤP ĐỘ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Uomyh836b38blpadpQ2vQUNAiovuicAzuFANJq_wAlpxodxu25NBbHUXgJJlfv8jjEXcZtxT71013TjF-sCPBs_clRq0RXfGY2V0OjWh0fIRpvC7ASdGGhHP_qjyRWPx5amiZvFdzdQO9JJ4fvZ6wmXZpei0ARvX4pwDqWRTsq-23wfaJLwXSUy6G17VONnuUujNs39YmD01imHB35t3r0dzrEu2VbWH4EfcLlS56Uiaq1L4_9M7GQvjk" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 05</small><strong class="cover-title-long">AI BIẾN THỂ ĐỀ THI 3 CẤP ĐỘ</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="AI BIẾN THỂ ĐỀ THI 3 CẤP ĐỘ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/bienthe-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">ỨNG DỤNG</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -456,8 +466,8 @@
     <!-- Card 6: ÔN TẬP TEN -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="HỌC TẬP &amp; ÔN TẬP" data-desc="Công cụ ôn tập và hỗ trợ học tập trong hệ sinh thái ứng dụng giáo dục." data-group="HỌC TẬP" data-title="ÔN TẬP">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://ontap-ten.vercel.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 06</small><strong>ÔN TẬP</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="ÔN TẬP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VEQmm_kO7ahjdzTQHzs4td5C5-M79paa1yOQ3fZwhymtlvWnRGIwDthtVGvNC1Wr0CUMDv0JocmDv1d_DkXZU6aG-5ONK9eWwA57BtDCpVzsXLJ1uBcXV6mHoP-y-THZ7rkJHI804NF_pNIH_tVBLn9BbUwZke0xC1SRtmlNHFX80LACqb1r69Kj7Otkvniheoub50yRW-uAmEXytDodpndkX7ITazpKu7Aj8nI-u2XZyKsSArPnJR5UF5" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 06</small><strong>ÔN TẬP</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="ÔN TẬP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/ontap-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">ỨNG DỤNG</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -493,8 +503,8 @@
     <!-- Card 7: ANH GIÁO AI -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="TRỢ LÝ HỌC TẬP" data-desc="Trợ lý AI hỗ trợ giải thích bài tập, hướng dẫn học tập và hỗ trợ người học ở nhiều môn học thân thiện." data-group="HỌC TẬP" data-title="ANH GIÁO AI">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://trolygiaibt.vercel.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 07</small><strong>ANH GIÁO AI</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="ANH GIÁO AI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Xo1157s4lu5W2xwu9Qo9QaCUhBPViV7qdrMstl9iA45uI_We_oqpAOsKoQgBe2nDOFYyc8TidLRWqs1TxjE3HjkeNGqnj3Gsnpx_joCJfv0Pz0ZoFIlEN1HSH7NWTJAIhuvDnQaAjGDIgX2DQpjiuhFmICCoUX0Q0xbYmZQlA8TMeYCOOTXk-hKn2esAq9fF55vuATi0NakI_tc9ywU_LUjUvr-DJPUrnXQoyjvXPI9TIXscaJd45lbQPd" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 07</small><strong>ANH GIÁO AI</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="ANH GIÁO AI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/anhgiao-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-tertiary-container font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">TRỢ LÝ AI</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -517,8 +527,8 @@
     <!-- Card 8: TRỢ LÝ MASTER PROMPT -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="AI ASSISTANTS" data-desc="Trợ lý chuyên hỗ trợ xây dựng, chuẩn hóa và tối ưu prompt phục vụ nhiều công việc với AI." data-group="SÁNG TẠO" data-title="TRỢ LÝ MASTER PROMPT">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://chatgpt.com/g/g-p-6a982f2d1b848191b5931b6f6ef7b48a-master-prompt/project" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 08</small><strong>TRỢ LÝ MASTER PROMPT</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="TRỢ LÝ MASTER PROMPT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XOFpT9NKXbW2eAylW0Q3p8gs6U1IZL_WyBl6_ixA-oKoQMDGBGExI9dVhYkr8lF2mzP0uCRvJbyFzNhcG0RWxUICrnLnL2qa1rbjZ8IkUHWwKYDaFQV7XAtc2ZIr4VJoVszGBzWPwKyuYQ1TUFNVmRoZOCCOOZ1Kv8QPLtmsdISt7xEKBPzahw5PBjAjuxkHZCpDe4ZykB5TCoRDG1hjZyqVV-XcYWJR8tA087n7DfZTJK78WC-qQDtydm" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 08</small><strong>TRỢ LÝ MASTER PROMPT</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="TRỢ LÝ MASTER PROMPT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/prompt-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-tertiary-container font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">TRỢ LÝ AI</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -541,8 +551,8 @@
     <!-- Card 9: TRỢ LÝ INFOGRAPHIC -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="SÁNG TẠO NỘI DUNG AI" data-desc="Trợ lý AI hỗ trợ phân tích nội dung và phát triển ý tưởng infographic trực quan cho giáo dục." data-group="SÁNG TẠO" data-title="TRỢ LÝ INFOGRAPHIC">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://chatgpt.com/g/g-p-6a98e08c80fc8191bc00213139cfbb8e-tao-infographic/project" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 09</small><strong>TRỢ LÝ INFOGRAPHIC</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="TRỢ LÝ INFOGRAPHIC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VZYcmEuy3tKAPbTl7iQOm1MEISZrxg5FzhtRGHLvtcQ6oMYKuQMrBq3WxL20RuQVqUj7cuaf_qeZ5f3X7ES7daY4HGuXS9v4c1n7cD4BDkEC7d0hsAwP0jf6V9jKXNZZlMr3_HwZFLgG154LL3HRVsdIWNMKMbwxrRDt3jlbnCH3LwfgvsTp6YWOTuCcMKYtRluYlgojXMjwyXP3A6cA-GkmtH4v4clAI0k94GT3aipNxH6_bfb1lFBTg-" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 09</small><strong>TRỢ LÝ INFOGRAPHIC</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="TRỢ LÝ INFOGRAPHIC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/infographic-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-tertiary-container font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">TRỢ LÝ AI</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -578,8 +588,8 @@
     <!-- Card 10: TRỢ LÝ ĐẠO DIỄN VIDEO -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="VIDEO AI" data-desc="Trợ lý AI hỗ trợ xây dựng ý tưởng, kịch bản và định hướng sản xuất video giáo dục." data-group="VIDEO" data-title="TRỢ LÝ ĐẠO DIỄN VIDEO">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://gemini.google.com/gem/1411L_mS0qC2g6xufT2PYxFmcfqXBySOm?usp=sharing" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 10</small><strong>TRỢ LÝ ĐẠO DIỄN VIDEO</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="TRỢ LÝ ĐẠO DIỄN VIDEO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VZXQFdtz1C41i1P-rTOSaScLG1cEXeBQmAawJheysdw7soCkmz44O_kzN4nKgZkq9YWwoVwYjsB_kGOCc_DsLcGXukymqi7r5T2laRhNFioIvMKhVwaycjzbKXVln2oarHZUQnjtZqhSjCcJexcAj-81Rg5uZrP6rKvN8fgtvuHPgN18pJoeRNz4W7xA0BSWsD7iBTgo2kNf6V6lR3D9TVpAtKe134U7C0Fx6NdxH01dfg0YYuU1NjY8Ex" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 10</small><strong>TRỢ LÝ ĐẠO DIỄN VIDEO</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="TRỢ LÝ ĐẠO DIỄN VIDEO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/daodien-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-tertiary-container font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">TRỢ LÝ AI</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -602,8 +612,8 @@
     <!-- Card 11: TẠO VIDEO ĐỒNG NHẤT 1CLICK -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="VIDEO AI" data-desc="Công cụ hỗ trợ quy trình tạo video AI với định hướng duy trì tính đồng nhất giữa các cảnh." data-group="VIDEO" data-title="TẠO VIDEO ĐỒNG NHẤT 1CLICK">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://labs.google/fx/tools/flow/shared/tool/d91f97ce-b748-418d-94de-a9480fd4590c" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 11</small><strong>TẠO VIDEO ĐỒNG NHẤT 1CLICK</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="TẠO VIDEO ĐỒNG NHẤT 1CLICK" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VDbrix9RtxfH4xVPJOL41N7LYa_zO0zWrxb8BKdShwbV9ohqCipBWXBlE65wQpziW5kos2K0gRIQpkbAfbYu92BOjUpirvxou7JK65S9xKdnX5RDSLW4q6X16Qw0EtZiT2tD91ad9ZAos2nMutL1c-8PlBXrJC07rQ9uaZeLRKBRsiYy2kp9VEhVgXrS_09XTYampV2QKtgE7vjMu0B1ot7Jv2yMXMCuugQTLl_j8w_1hkfsNCKd3qBqf_" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 11</small><strong class="cover-title-long">TẠO VIDEO ĐỒNG NHẤT 1CLICK</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="TẠO VIDEO ĐỒNG NHẤT 1CLICK" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/video1click-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">CÔNG CỤ AI</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -626,8 +636,8 @@
     <!-- Card 12: VIDEO TƯƠNG TÁC GAMMA -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="SÁNG TẠO NỘI DUNG AI" data-desc="Công cụ hỗ trợ xây dựng nội dung video và trải nghiệm học tập tương tác." data-group="SÁNG TẠO VIDEO" data-title="VIDEO TƯƠNG TÁC GAMMA">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://videotuongtac-gamma.vercel.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 12</small><strong>VIDEO TƯƠNG TÁC GAMMA</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="VIDEO TƯƠNG TÁC GAMMA" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1VVnIePvDabYpKxKlPwRXODaLiUNow8dlVcLRUimwqxs_iriBqxtsJRNI5a1FjyG062q5zKWJAbylwanoHgawi3OODSl26Mg19uyO_z9OL6wUgr_M2QYZhefEDOrmfkCrWzG-G3DfPOYpTLJ5dAbup3ZI2tLMAj3TsKrWPjuxdDhXmoXV6ORkz5ouGsewpWEQcklStXDZoC9FCLx7pIH_0mho-QgmCROlZLAya3WImZgx_jfFNeqZjmLYE" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 12</small><strong>VIDEO TƯƠNG TÁC GAMMA</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="VIDEO TƯƠNG TÁC GAMMA" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/videotuongtac-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">CÔNG CỤ AI</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -663,8 +673,8 @@
     <!-- Card 13: SỔ TAY BỘ MÔN -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="QUẢN LÝ &amp; CHUYÊN MÔN" data-desc="Không gian công cụ số hỗ trợ công việc chuyên môn và sổ tay bộ môn dành cho giáo viên." data-group="QUẢN LÝ" data-title="SỔ TAY BỘ MÔN">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://sotaybomon.vercel.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 13</small><strong>SỔ TAY BỘ MÔN</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="SỔ TAY BỘ MÔN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XM4JbLEl04uU5CwoCTAIBx1p9xezWF-Szvwm6_3n27xfLJGPEcBTb7jHB-G7Fw9MDMjfYlKH-NGveG0TwEKv4mL6ALDc8adlSERaN0MrX0kkW21nUCRCp94baPy1pmVs-CSMyaEAmlqJG8CuHn_EktH6wjd_tVnbOGKzf_Jds3zvdFpo-M4aVoSdgRLQ4-3CkV6eJi0m6wgPlUt3Bb5TpxfcPiTW-EbqO8MGBkXLKzZ7TVI04EJ4kKU6t8" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 13</small><strong>SỔ TAY BỘ MÔN</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="SỔ TAY BỘ MÔN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/sotay-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-primary font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">ỨNG DỤNG</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -687,8 +697,8 @@
     <!-- Card 14: TRỢ LÝ SÁNG KIẾN VIP -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="SÁNG KIẾN KINH NGHIỆM" data-desc="Trợ lý AI hỗ trợ giáo viên trong quy trình xây dựng và phát triển nội dung sáng kiến kinh nghiệm." data-group="SÁNG KIẾN" data-title="TRỢ LÝ SÁNG KIẾN VIP">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://tro-ly-sang-kien-vip.vercel.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 14</small><strong>TRỢ LÝ SÁNG KIẾN VIP</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="TRỢ LÝ SÁNG KIẾN VIP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1W6pFOQe4NaVGnVPWvINuHvKmRbJKR-bSXFRxMBZ15W_Hj1hkwKGQifE6JMrITJozybyOHSUwynOyeicH5JNimExbQqREyuNqHXAkGTcxfc1ewb_irmmKIoVNx1oEGa3dse4HRVvbbfhXhXA0KarI3uArggYilicF5rbnoa1p1r1RN8UjbeF9Jf1wTTuuOe-5imDPMVkrLDP-xxLhJSW1tna964BycXe4IA-Xn3Y3dEIUB1OPQ6Yer2abzO" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 14</small><strong>TRỢ LÝ SÁNG KIẾN VIP</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="TRỢ LÝ SÁNG KIẾN VIP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/sangkien-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-tertiary-container font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">TRỢ LÝ AI</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
@@ -711,8 +721,8 @@
     <!-- Card 15: THẨM ĐỊNH SKKN -->
     <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="SÁNG KIẾN KINH NGHIỆM" data-desc="Công cụ phục vụ quá trình xem xét và thẩm định nội dung sáng kiến kinh nghiệm." data-group="SÁNG KIẾN" data-title="THẨM ĐỊNH SKKN">
       <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://thamdinh-skkn.vercel.app/" rel="noopener noreferrer" target="_blank">
-        <div class="app-cover-fallback" aria-hidden="true"><small>EDUTECH AI · 15</small><strong>THẨM ĐỊNH SKKN</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
-        <img alt="THẨM ĐỊNH SKKN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XsFqeqa69hIbzjQkhewqXTDEGvea_o-QPuoIi6A_FSkBHxgqFSStruwQcREvMRN_2n9V-xZ9ApsKkIIBRwtGMm_YhnpNxsHCiMHQSZu4Otft_vsSed0LHEYhTnZnYXpERxhB6RRm0hKQemBM9pgiJ56qHF7Go-D0-szR2mlOVpu5j9LE4iKZbSAWiI64L460oVC4ntX2jHv9tlbHsjp4eQzWRkr5qfiRqs_zKESXv2HinOFwfyh3_I6_E" decoding="async" onerror="this.hidden = true">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 15</small><strong>THẨM ĐỊNH SKKN</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="THẨM ĐỊNH SKKN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/thamdinh-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
         <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">CÔNG CỤ AI</span>
         <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
           <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">

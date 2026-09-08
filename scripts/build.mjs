@@ -1,4 +1,4 @@
-import { copyFile, mkdir, rm, stat } from "node:fs/promises";
+import { cp, copyFile, mkdir, rm, stat } from "node:fs/promises";
 import { basename, resolve } from "node:path";
 
 const projectRoot = resolve(import.meta.dirname, "..");
@@ -21,3 +21,5 @@ for (const file of staticFiles) {
 }
 
 console.log(`Static build complete: ${staticFiles.length} files copied to public/`);
+
+await cp(resolve(projectRoot, "assets"), resolve(outputDirectory, "assets"), { recursive: true });
