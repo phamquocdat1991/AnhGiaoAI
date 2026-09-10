@@ -167,7 +167,7 @@
   /* When image loads cleanly, hide the dark title overlay so the bright artwork shines unobstructed */
   .app-cover > .app-cover-title { display: none; }
   .app-cover > img[hidden] ~ .app-cover-title { display: flex; }
-  .app-cover > span { z-index: 3; }
+  .app-cover > span { display: none; }
   .app-cover > div:not(.app-cover-fallback) { z-index: 4; background: rgba(15, 23, 42, 0.28) !important; }
   @media (prefers-reduced-motion: reduce) { .app-cover img { transition: none; } }
 </style>
