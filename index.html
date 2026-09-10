@@ -289,7 +289,7 @@
 <div class="mb-8 overflow-x-auto hide-scrollbar pb-2">
 <div class="flex items-center gap-2 min-w-max flex-wrap" id="categoryChips">
 <button class="filter-chip active px-4 py-2 rounded-lg text-xs font-semibold tracking-wide transition-all bg-primary text-on-primary shadow-sm" data-category="ALL">
-          Tất cả (15)
+          Tất cả (16)
         </button>
 <button class="filter-chip px-4 py-2 rounded-lg text-xs font-semibold tracking-wide transition-all bg-surface border border-surface-variant text-on-surface hover:bg-surface-container hover:text-primary" data-category="QUẢN LÝ">
           Quản lý &amp; Chuyên môn
@@ -312,14 +312,17 @@
 <button class="filter-chip px-4 py-2 rounded-lg text-xs font-semibold tracking-wide transition-all bg-surface border border-surface-variant text-on-surface hover:bg-surface-container hover:text-primary" data-category="VIDEO">
           Video AI
         </button>
+<button class="filter-chip px-4 py-2 rounded-lg text-xs font-semibold tracking-wide transition-all bg-surface border border-surface-variant text-on-surface hover:bg-surface-container hover:text-primary" data-category="MÔ PHỎNG">
+          Mô phỏng &amp; Thực hành
+        </button>
 </div>
 </div>
 <!-- Active Filter Status & Count -->
 <div class="flex justify-between items-center mb-6 text-xs text-on-surface-variant">
-<div class="">Hiển thị <span class="font-bold text-primary" id="visibleCount">15</span> / 15 ứng dụng</div>
+<div class="">Hiển thị <span class="font-bold text-primary" id="visibleCount">16</span> / 16 ứng dụng</div>
 <div class="hidden text-error font-medium" id="noResultsNotice">Không tìm thấy ứng dụng phù hợp</div>
 </div>
-<!-- 15 App Cards Grid -->
+<!-- 16 App Cards Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="appsGrid"><!-- GROUP 01: CORE TEACHING -->
 <div class="workflow-group col-span-1 md:col-span-2 lg:col-span-3 flex flex-col gap-4 mt-2 mb-2">
   <div class="flex items-center gap-3 pb-2 border-b border-surface-variant/70">
@@ -743,6 +746,43 @@
       </div>
     </article>
   </div>
+</div>
+
+<!-- GROUP 06: DIGITAL LAB & STEM SIMULATION -->
+<div class="workflow-group col-span-1 md:col-span-2 lg:col-span-3 flex flex-col gap-4 mt-6 mb-2">
+  <div class="flex items-center gap-3 pb-2 border-b border-surface-variant/70">
+    <span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-primary-fixed text-primary font-bold text-xs shadow-sm">06</span>
+    <div>
+      <h3 class="text-sm font-bold tracking-wide uppercase text-slate-900">Mô phỏng &amp; Phòng thực hành số</h3>
+      <p class="text-xs text-on-surface-variant font-medium">Thí nghiệm ảo tương tác KHTN - Vật lý - Hóa học và thiết kế bài học STEM sinh động với AI</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Card 16: TRỢ LÝ TẠO MÔ PHỎNG AI -->
+    <article class="app-card group flex flex-col bg-surface rounded-xl overflow-hidden shadow-level-1 card-hover-effect border border-surface-variant" data-category="MÔ PHỎNG &amp; THỰC HÀNH SỐ" data-desc="Tạo mô phỏng giáo dục tương tác, phòng thực hành số trực quan và thiết kế bài học STEM với AI." data-group="MÔ PHỎNG KẾ HOẠCH HỌC TẬP SÁNG TẠO" data-title="TRỢ LÝ TẠO MÔ PHỎNG AI">
+      <a class="app-cover relative aspect-video w-full overflow-hidden bg-surface-variant block" href="https://tro-ly-mo-phong.vercel.app/" rel="noopener noreferrer" target="_blank">
+        <div class="app-cover-fallback app-cover-title" aria-hidden="true"><small>EDUTECH AI · 16</small><strong class="cover-title-long">TRỢ LÝ TẠO MÔ PHỎNG AI</strong><small>CÔNG CỤ GIÁO DỤC THÔNG MINH</small></div>
+        <img alt="TRỢ LÝ TẠO MÔ PHỎNG AI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/covers/mophong-cinematic.webp" width="1672" height="941" loading="lazy" decoding="async" onerror="this.hidden = true">
+        <span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md text-tertiary-container font-bold text-[10px] tracking-wider uppercase px-2.5 py-1 rounded-md shadow-sm border border-white/40">TRỢ LÝ AI</span>
+        <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+          <span class="text-on-primary font-label-md text-xs bg-secondary px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-lg font-semibold">
+            MỞ ỨNG DỤNG <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </span>
+        </div>
+      </a>
+      <div class="p-stack-md flex flex-col flex-grow">
+        <div class="text-[11px] font-bold tracking-wider text-secondary uppercase mb-1">MÔ PHỎNG &amp; THỰC HÀNH SỐ</div>
+        <h4 class="font-headline-md-mobile text-lg font-bold text-slate-900 mb-2 line-clamp-1">TRỢ LÝ TẠO MÔ PHỎNG AI</h4>
+        <p class="font-body-md text-slate-600 text-sm line-clamp-2 min-h-[2.5rem] mb-4">Tạo mô phỏng giáo dục tương tác, phòng thực hành số trực quan và thiết kế bài học STEM với AI.</p>
+        <div class="mt-auto pt-2 border-t border-surface-variant/60 flex items-center justify-between">
+          <a class="inline-flex items-center gap-1.5 text-xs font-semibold text-secondary hover:text-on-tertiary-fixed-variant transition-colors" href="https://tro-ly-mo-phong.vercel.app/" rel="noopener noreferrer" target="_blank">
+            Khám phá ngay <span class="material-symbols-outlined text-[15px]">arrow_outward</span>
+          </a>
+          <span class="text-[11px] text-outline">Thực hành số</span>
+        </div>
+      </div>
+    </article>
+  </div>
 </div></div>
 </section>
 <!-- Final CTA Section -->
@@ -862,6 +902,16 @@ Sẵn sàng hỗ trợ giáo viên
       } else {
         noResultsNotice.classList.add('hidden');
       }
+
+      const workflowGroups = document.querySelectorAll('.workflow-group');
+      workflowGroups.forEach(groupEl => {
+        const groupCards = groupEl.querySelectorAll('.app-card:not(.hidden)');
+        if (groupCards.length > 0) {
+          groupEl.classList.remove('hidden');
+        } else {
+          groupEl.classList.add('hidden');
+        }
+      });
     }
 
     // Search input event

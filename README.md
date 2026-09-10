@@ -12,7 +12,7 @@
 
 ## 🌟 Điểm nổi bật & Tính năng chính
 
-- 🚀 **15+ Trợ lý AI Giáo dục chuyên biệt**: Soạn giáo án chuẩn Công văn 5512, Trợ lý chủ nhiệm, Ma trận & Đặc tả đề kiểm tra, Phân tích dữ liệu học tập, Trợ lý STEM/STEAM, v.v.
+- 🚀 **16+ Trợ lý AI Giáo dục chuyên biệt**: Soạn giáo án chuẩn Công văn 5512, Trợ lý chủ nhiệm, Ma trận & Đặc tả đề kiểm tra, Trợ lý tạo mô phỏng & phòng thực hành số, Phân tích dữ liệu học tập, Trợ lý STEM/STEAM, v.v.
 - ⚡ **Tìm kiếm trực tiếp (Live Search)**: Tìm kiếm tức thì theo tên ứng dụng, danh mục và từ khóa (hỗ trợ tiếng Việt có dấu và không dấu).
 - 🏷️ **Bộ lọc danh mục linh hoạt**: Phân loại theo *Quản lý & Chuyên môn*, *Kế hoạch & Giảng dạy*, *Kiểm tra & Đánh giá*, *Tự học & Phát triển*.
 - 🎨 **Thiết kế Lumina Academic**: Giao diện tối ưu theo chuẩn Material Design 3, Typography Plus Jakarta Sans & Inter sắc nét, hiệu ứng Glassmorphism và tối ưu trải nghiệm trên cả Mobile lẫn Desktop.
